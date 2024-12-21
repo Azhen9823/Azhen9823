@@ -1,0 +1,94 @@
+/* 设置页面整体背景颜色为偏暗色调，模拟赛博朋克常见的昏暗环境 */
+body {
+  background-color: #000;
+  color: #fff;
+  /* 字体颜色设为白色，以便在暗色背景上清晰显示内容 */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* 去除页面默认的外边距和内边距 */
+}
+
+/* 对页面标题（假设在body中后续添加h1等标题元素）进行样式设置，营造赛博朋克风格 */
+h1 {
+  color: #00ffff;
+  /* 使用赛博朋克标志性的青蓝色作为标题颜色 */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  /* 添加文本阴影，模拟霓虹灯发光效果 */
+  animation: neon-title 2s ease infinite alternate;
+  /* 应用动画，让标题呈现闪烁的霓虹灯效果 */
+}
+
+@keyframes neon-title {
+  from {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+/* 对页面链接（假设后续在body中有a标签链接元素）进行样式设置 */
+a {
+  color: #00ffff;
+  /* 链接颜色设为青蓝色 */
+  text-decoration: none;
+  /* 去除默认的下划线 */
+  transition: color 0.3s ease;
+  /* 添加颜色过渡效果，鼠标悬停时变色更平滑 */
+}
+
+a:hover {
+  color: #ff00ff;
+  /* 鼠标悬停时链接颜色变为粉色，增加色彩变化的视觉效果 */
+}
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  color: #00ffea;
+  text-shadow: 0 0 5px rgba(0, 255, 234, 0.8);
+  animation: text-blink 2s infinite; /* 标题闪烁 */
+}
+
+@keyframes text-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0.5;
+  }
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #00ffea;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff00ff;
+}

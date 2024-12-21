@@ -1,0 +1,30 @@
+#myImage1 {
+  transition: transform 0.3s ease; /* 添加过渡效果，让放大过程更平滑 */
+  /* 初始宽度，可以根据你的需求调整 */
+}
+#myImage1:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大1.2倍，可按需修改放大倍数 */
+}
+
+#myImage2 {
+  transition: transform 0.3s ease; /* 添加过渡效果，让放大过程更平滑 */ /* 初始宽度，可以根据你的需求调整 */
+}
+#myImage2:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大1.2倍，可按需修改放大倍数 */
+}
+
+#myImage3 {
+  transition: transform 0.3s ease; /* 添加过渡效果，让放大过程更平滑 */
+  /* 初始宽度，可以根据你的需求调整 */
+}
+#myImage3:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大1.2倍，可按需修改放大倍数 */
+}
+
+#myImage4 {
+  transition: transform 0.3s ease; /* 添加过渡效果，让放大过程更平滑 */
+  /* 初始宽度，可以根据你的需求调整 */
+}
+#myImage4:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大1.2倍，可按需修改放大倍数 */
+}
