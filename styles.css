@@ -247,19 +247,19 @@ div div a {
   margin-left: 20px;
 }
 body {
-  background-image: url("../AI gogo/Photo/background4.png");
+  background-image: url("background3.png");
   background-repeat: no - repeat;
   background-attachment: fixed;
 }
 .bg-image1 {
-  background-image: url("../AI gogo/Photo/background3.png");
+  background-image: url("background4.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation: cyberpunkTransition 2s ease-in-out;
 }
 
 .bg-image2 {
-  background-image: url("../AI gogo/Photo/background4.png");
+  background-image: url("background3.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation: cyberpunkTransition 2s ease-in-out;
