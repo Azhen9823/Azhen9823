@@ -180,24 +180,48 @@ footer {
   text-shadow: 0 0 5px rgba(0, 255, 234, 0.8);
   animation: text-blink 2s infinite; /* 标题闪烁 */
 }
+/*这里下面部分是响应式卡片布局的css代码，呵呵*/
 .card-container {
   display: flex;
-  flex-direction: column;
-  gap: 30px; /* 卡片之间的间距 */
-}
-.card {
-  background-color: #396868;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin: 0px 80px 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-div div a {
-  text-decoration: none;
-  color: #00ffea;
-  font-size: 30px;
-  transition: color 0.3s ease;
+/* 单个卡片样式 */
+.card {
+  background-color: #f8459e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
+
+/* 卡片内容区域 */
+.card-content {
+  padding: 20px;
+}
+.card a {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #00ffea;
+  text-shadow: 0 0 3px rgba(0, 255, 234, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+/* 卡片描述 */
+.card p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+/* 鼠标悬停效果 */
+.card:hover {
+  transform: translateY(-5px);
+}
+/*这里上面部分是响应式卡片布局的css代码，呵呵*/
 .selection {
   background-color: #1a1a1a;
   display: flex;
